@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script>
+        const setMap = (lat,lon) => {
+            const iframe = document.getElementById('iframe');
+            iframe.src = `https://maps.google.com/maps?q=${lat},${lon}`
+        }
+    </script>
+</head>
+<body>
+<div>
+    <ul>
+        <li onclick="setMap(36.2048, 138.253)">打刻場所１</li>
+        <li onclick="setMap(37.2048, 138.253)">打刻場所１</li>
+    </ul>
+</div>
+<div>
+    <iframe id="iframe"></iframe>
+</div>
+</body>
+
+</html>
